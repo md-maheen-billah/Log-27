@@ -37,3 +37,24 @@ console.log(sum);
 
 ```
 ---
+### Practice Task-1:
+Write an arrow function where it will do the following:
+a) It will take an array where the array elements will be the name of your friends
+b) Check if the length of each element is even, push elements with even length to a new array and return the result
+```js
+const friendsNames = (array) => {
+  const evenNames = [];
+  for (arr of array) {
+    if (arr.length % 2 === 0) {
+      evenNames.push(arr);
+    }
+  }
+  return evenNames;
+};
+const friends = friendsNames(["rafi", "sameule", "ahmed", "daniel", "mark"]);
+console.log(friends);
+// PS C:\Projects\Log-27> node practice2.js
+// [ 'rafi', 'daniel', 'mark' ]
+
+```
+---
