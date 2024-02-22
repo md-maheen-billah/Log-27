@@ -43,6 +43,8 @@ Write an arrow function where it will do the following:
 a) It will take an array where the array elements will be the name of your friends.
 
 b) Check if the length of each element is even, push elements with even length to a new array and return the result.
+
+Print the result.
 ```js
 const friendsNames = (array) => {
   const evenNames = [];
@@ -57,6 +59,58 @@ const friends = friendsNames(["rafi", "sameule", "ahmed", "daniel", "mark"]);
 console.log(friends);
 // PS C:\Projects\Log-27> node practice2.js
 // [ 'rafi', 'daniel', 'mark' ]
+
+```
+---
+### Practice Task-3:
+Write an arrow function where it will do the following:
+
+a) Square each array element
+
+b) Calculate the of the squared elements
+
+c) Return the average of the sum of the squared elements
+
+Print the result.
+```js
+const arrayNumbers = (array) => {
+  let sum = 0;
+  for (arr of array) {
+    arr = arr * arr;
+    sum = sum + arr;
+  }
+  const avg = sum / array.length;
+  return avg;
+};
+const output = arrayNumbers([5, 4, 3, 2]);
+console.log(output);
+
+// PS C:\Projects\Log-27> node practice3.js
+// 13.5
+
+```
+---
+### Practice Task-4:
+write an arrow function where it will do the following:
+
+a) It will take two array inputs
+
+b) Combine the two arrays and assign them in a new array
+
+c) Find the maximum number from the new array and return the result
+
+Print the result.
+
+```js
+const numArr = (array) => Math.max(...array);
+const odd = [1, 3, 5, 7, 9];
+const even = [2, 4, 6, 8];
+const numbers = [...odd, ...even];
+const maxNumber = numArr(numbers);
+console.log(maxNumber);
+
+// PS C:\Projects\Log-27> node practice4.js
+// 9
 
 ```
 ---
