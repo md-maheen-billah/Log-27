@@ -14,16 +14,26 @@ console.log(output);
 // 100
 
 ```
-3) Write the following sentence in three lines and print the result: I am a web developer. I love to code. I love to eat biryani.
-4) Write an arrow function that will take 2 parameters: One parameter will come from you and the other parameter will be a default parameter. Add these two parameters and return the result.
-
+2) Write the following sentence in three lines and print the result: I am a web developer. I love to code. I love to eat biryani.
 ```js
-const multiply = (a, b, c) => a * b * c;
-const output = multiply(5, 4, 5);
-console.log(output);
-
+const sentence = `I am a web developer.
+I love to code.
+I love to eat biryani.`;
+console.log(sentence);
 // PS C:\Projects\Log-27> node practice1.js
-// 100
+// I am a web developer.
+// I love to code.
+// I love to eat biryani.
+
+```
+3) Write an arrow function that will take 2 parameters: One parameter will come from you and the other parameter will be a default parameter. Add these two parameters and return the result.
+```js
+const arrowFunction = (a, b = 10) => a + b;
+const sum = arrowFunction(10);
+console.log(sum);
+// PS C:\Projects\Log-27> node practice1.js
+// 20
+
 
 ```
 ---
