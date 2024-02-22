@@ -1,5 +1,5 @@
 # Log 27 (Duration: 1/6 Months)
-Today's lesson focused on more javascriptrecap and introduction to es5 and es6.
+Today's lesson focused on javascript recap and introduction to es5 and es6.
 
 ---
 
